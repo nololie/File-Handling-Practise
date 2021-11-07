@@ -22,16 +22,29 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.btnRegisterStudent = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'btnRegisterStudent
+        '
+        Me.btnRegisterStudent.Location = New System.Drawing.Point(12, 12)
+        Me.btnRegisterStudent.Name = "btnRegisterStudent"
+        Me.btnRegisterStudent.Size = New System.Drawing.Size(122, 31)
+        Me.btnRegisterStudent.TabIndex = 0
+        Me.btnRegisterStudent.Text = "Register Student"
+        Me.btnRegisterStudent.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(665, 364)
+        Me.Controls.Add(Me.btnRegisterStudent)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub
+
+    Friend WithEvents btnRegisterStudent As Button
 End Class
